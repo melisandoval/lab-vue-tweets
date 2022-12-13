@@ -1,5 +1,5 @@
 <template>
-  <div className="tweet" v-for="tweet in tweets" :key="tweet.message">
+  <div className="tweet">
     <ProfileImage :image="tweet.user.image" />
     <div className="body">
       <div className="top">
@@ -21,8 +21,8 @@ import Message from "./Message.vue";
 import Actions from "./Actions.vue";
 
 export default {
-  props: ["tweets"],
   components: { ProfileImage, User, Timestamp, Message, Actions },
+  props: ["tweet"],
 };
 </script>
 
