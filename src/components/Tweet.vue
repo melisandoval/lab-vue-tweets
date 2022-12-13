@@ -1,41 +1,28 @@
 <template>
   <div className="tweet" v-for="tweet in tweets" :key="tweet.message">
-    <img :src="tweet.user.image" className="profile" alt="profile" />
-
+    <ProfileImage :image="tweet.user.image" />
     <div className="body">
       <div className="top">
-        <span className="user">
-          <span className="name">{{ tweet.user.name }}</span>
-          <span className="handle">{{ tweet.user.handle }}</span>
-        </span>
-
-        <span className="timestamp">{{ tweet.timestamp }}</span>
+        <User :user="tweet.user" />
+        <Timestamp :timestamp="tweet.timestamp" />
       </div>
-
-      <p className="message">
-        {{ tweet.message }}
-      </p>
-
-      <div className="actions">
-        <!-- Font Awesome icons -->
-        <i class="far fa-comment"></i>
-        <i class="fas fa-retweet"></i>
-        <i class="far fa-heart"></i>
-        <i class="fas fa-share"></i>
-      </div>
+      <Message :message="tweet.message" />
+      <Actions />
     </div>
-
     <i class="fas fa-ellipsis-h"></i>
   </div>
 </template>
 
 <script>
+import ProfileImage from "./ProfileImage.vue";
+import User from "./User.vue";
+import Timestamp from "./Timestamp.vue";
+import Message from "./Message.vue";
+import Actions from "./Actions.vue";
+
 export default {
   props: ["tweets"],
-  // created() {
-  //   // props are exposed on `this`
-  //   console.log(this.tweets);
-  // },
+  components: { ProfileImage, User, Timestamp, Message, Actions },
 };
 </script>
 
