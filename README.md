@@ -1,40 +1,4 @@
-![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
-
-# LAB | Vue.js Tweets 
-
-## Introduction
-
-Passing data through *props* is an important Vue.js concept that is best understood by hands-on practice. We'll use this exercise to help you solidify your understanding of props. 
-
-We will be cloning an existing piece of UI from a popular app, Twitter. Let's get started!
-
-<p align="center">
-  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-frontend-vue/lab-vue-tweets-4.png" width="500">
-</p>
-
-## Setup
-
-- Fork this repo
-- Clone this repo
-- Open the LAB and start:
-
-  ```bash
-  $ cd lab-vue-tweets
-  $ yarn install
-  $ yarn dev
-  ```
-
-## Submission
-
-- Upon completion, run the following commands:
-
-  ```bash
-  git add .
-  git commit -m "done"
-  git push origin main
-  ```
-
-- Create a Pull Request so that your TAs can check your work.
+# Bootcamp lab | Vue props practice
 
 ## Getting Started
    
@@ -347,6 +311,3 @@ Once finished, your app should be displaying the following content:
 </details>
 
 <hr>
-
-
-Happy coding! :blue_heart:
